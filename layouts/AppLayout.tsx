@@ -2,7 +2,11 @@ import React from "react";
 import {Header} from "../components/Header";
 import {Layout} from "antd";
 
-export const AppLayout = ({children}) => {
+export interface AppLayoutProps {
+  children: any
+}
+
+export const AppLayout = ({children}: AppLayoutProps) => {
   return (
     <>
 
