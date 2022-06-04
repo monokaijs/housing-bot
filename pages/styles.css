@@ -15,7 +15,7 @@ body {
 @media only screen and (max-device-width: 640px) {
   /* Styles */
   :root {
-    --side-spacing: 16px;
+    --side-spacing: 8px;
   }
   .header {
     padding: 0 16px;
@@ -29,18 +29,24 @@ body {
     left: var(--side-spacing);
     right: var(--side-spacing);
   }
+  .home-carousel-slide .content {
+    padding: 0 calc(var(--side-spacing) * 2)!important;
+  }
 }
 
 @media only screen and (max-device-width: 768px) {
   /* Styles */
   :root {
-    --side-spacing: 24px;
+    --side-spacing: 16px;
   }
   .header {
     padding: 0 16px;
   }
   .section {
     margin-bottom: 16px;
+  }
+  .home-carousel-slide .content {
+    padding: 0 calc(var(--side-spacing) * 2)!important;
   }
 }
 
@@ -84,7 +90,7 @@ body {
 }
 
 .home-carousel-slide .content {
-  padding: 0 4rem;
+  padding: 0 calc(var(--side-spacing));
 }
 
 .home-carousel-slide h1 {
