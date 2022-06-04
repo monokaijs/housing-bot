@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --side-spacing: 64px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-input .section {
+  padding-bottom: 0;
+}
+
+@media only screen and (max-device-width: 640px) {
+  /* Styles */
+  :root {
+    --side-spacing: 16px;
+  }
+  .header {
+    padding: 0 16px;
+  }
+  .section {
+    margin-bottom: 16px;
+  }
+
+  .order-btn {
+    position: absolute;
+    left: var(--side-spacing);
+    right: var(--side-spacing);
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  /* Styles */
+  :root {
+    --side-spacing: 24px;
+  }
+  .header {
+    padding: 0 16px;
+  }
+  .section {
+    margin-bottom: 16px;
+  }
+}
+
+.main-content {
+  padding: 64px var(--side-spacing);
+}
+
+.ant-layout {
+  background-color: #FFF;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100%;
+  padding-left: var(--side-spacing);
+  padding-right: var(--side-spacing);
+}
+
+.app-container .app-layout {
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.header {
+  height: 72px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.home-carousel-slide {
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  display: flex!important;
+  position: relative;
+  align-items: center;
+}
+
+.home-carousel-slide .content {
+  padding: 0 4rem;
+}
+
+.home-carousel-slide h1 {
+  font-size: 58px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.home-carousel-slide .bg {
+  position: absolute;
+  filter: grayscale(100%);
+  opacity: .3;
+  left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%;
+  background-image: url("https://media.istockphoto.com/photos/residential-housing-background-with-multiple-rooftops-picture-id1192518093?b=1&k=20&m=1192518093&s=170667a&w=0&h=kquw_RhcVAowBnQn9VDWWei_Yx4iTcgtKKw32DxV_Fg=");
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.search-form {
+  position: relative;
+  padding: 0 var(--side-spacing);
+  margin-top: -32px;
+}
+
+.search-form .section {
+  border: 1px solid #00000013;
+  padding: 16px;
+  border-radius: 8px;
+}
+.search-form .input-address {
+  width: 100%;
+}
+.search-form .input-address .ant-select-selector {
+  padding: 0 0 0 0!important;
+}
+.search-form .input-address .ant-select-selector .ant-select-selection-item,
+.search-form .ant-picker-large .ant-picker-input input {
+  font-weight: bold!important;
+  font-size: 24px;
+}
+.search-form .ant-picker-large .ant-picker-input {
+  padding-bottom: 2px;
+}
+.search-form .ant-picker {
+  padding: 0;
+}
+.search-form .address-detail {
+  font-size: 10px;
+}
+
+.search-form .address-detail, .section .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.search-form .search-input {
+  position: relative;
+  padding: 24px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.09);
+}
+
+.search-form .search-input .phone-input {
+  border: none;
+  border-left: 1px solid #00000033;
+  margin-left: 10px;
+}
+
+.search-form .search-input .contact-btn {
+  border-radius: 8px;
+  background-color: #000;
+  color: #FFF
+}
+
+.search-form .search-input .contact-submit-wrapper {
+  border-left: 1px solid #00000033;
+  padding-left: 10px;
+}
+
+.search-form .search-input .ant-select-selector,
+.search-form .search-input .ant-picker {
+  outline: none;
+  border: none;
+  margin: 0;
+}
+
+.order-btn {
+  position: absolute;
+  background-color: #000;
+  color: #FFF;
+  right: 24px!important;
+  bottom: -32px;
+  line-height: 32px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.order-btn .anticon {
+  padding-left: 16px;
+}
+
+.gallery-images img {
+  border-radius: 8px;
+  opacity: .4;
+  transition: all 400ms ease-in-out;
+}
+
+.gallery-images img:hover {
+  opacity: 1;
+}
+
+
+.manage-nav {
+
+}
+
+.manage-nav a {
+  color: #000;
+  font-weight: 600;
+}
