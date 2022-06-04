@@ -152,7 +152,7 @@ body {
 }
 
 .search-form .search-input .phone-input {
-  border: none;
+  border: none!important;
   border-left: 1px solid #00000033;
   margin-left: 10px;
 }
@@ -176,18 +176,18 @@ body {
 }
 
 .order-btn {
-  position: absolute;
-  background-color: #000;
-  color: #FFF;
+  position: absolute!important;
+  background-color: #000!important;
+  color: #FFF!important;
   right: 24px!important;
-  bottom: -32px;
-  line-height: 32px;
-  height: 48px;
-  border-radius: 8px;
-  font-size: 16px;
+  bottom: -32px!important;
+  line-height: 32px!important;
+  height: 48px!important;
+  border-radius: 8px!important;
+  font-size: 16px!important;
 }
 .order-btn .anticon {
-  padding-left: 16px;
+  padding-left: 16px!important;
 }
 
 .gallery-images img {
