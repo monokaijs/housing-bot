@@ -49,7 +49,7 @@ body {
 }
 
 .ant-layout {
-  background-color: #FFF;
+  background-color: #FFF!important;
 }
 
 .app-container {
